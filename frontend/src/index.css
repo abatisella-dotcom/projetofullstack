@@ -44,7 +44,7 @@ a {
   color: inherit;
 }
 
-/* Cabecalho / Navbar */
+
 .cabecalho {
   background-color: var(--cor-vinho);
   color: var(--cor-branca);
@@ -52,7 +52,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -83,12 +82,11 @@ a {
 .cabecalho-link:hover,
 .cabecalho-link.ativo {
   color: #FFFFFF;
-  text-decoration: underline;
 }
 
 .cabecalho-botao-sair {
   background-color: var(--cor-rosa);
-  color: var(--cor-vinho);
+  color: var(--cor-branca);
   border: none;
   padding: 6px 16px;
   border-radius: 20px;
