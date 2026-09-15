@@ -9,7 +9,7 @@ import Inicio from './paginas/Inicio';
 import Login from './paginas/Login';
 import Cadastro from './paginas/Cadastro';
 import Dashboard from './paginas/Dashboard';
-import MusicasLista from './paginas/MusicasLista';
+import MusicasLista from './paginas/MusicaLista';
 import MusicaDetalhes from './paginas/MusicaDetalhes';
 import NovaMusica from './paginas/NovaMusica';
 import EditarMusica from './paginas/EditarMusica';
