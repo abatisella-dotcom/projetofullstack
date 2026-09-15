@@ -120,10 +120,10 @@ a {
 /* Rodape */
 .rodape {
   background-color: var(--cor-branca);
-  border-top: 1px solid var(--cor-borda);
+  border-top: 3px solid var(--cor-vinho-escuro);
   padding: 25px 20px;
   text-align: center;
-  color: var(--cor-cinza-texto);
+  color: #000000;
   font-size: 0.85rem;
   margin-top: auto;
 }
@@ -136,22 +136,16 @@ a {
 }
 
 .rodape-icone {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid var(--cor-borda);
+  width: 40px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
-  color: var(--cor-vinho);
+  color: #000000;
   transition: all 0.2s ease;
 }
 
-.rodape-icone:hover {
-  background-color: var(--cor-vinho);
-  color: white;
-}
 
 /* Telas de Autenticacao (Login e Cadastro) */
 .fundo-autenticacao {
