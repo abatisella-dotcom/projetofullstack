@@ -605,6 +605,8 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  background-image: url('../src/assets/img/FundoListrado.png');
+  background-repeat: repeat;
 }
 
 .titulo-listagem {
@@ -640,11 +642,7 @@ a {
   background-color: #FFFFFF;
 }
 
-.botoes-generos {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
+
 
 .filtro-genero-btn {
   padding: 6px 14px;
