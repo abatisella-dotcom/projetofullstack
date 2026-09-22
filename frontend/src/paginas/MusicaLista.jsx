@@ -44,7 +44,7 @@ export default function MusicasLista() {
           <input
             type="text"
             className="busca-input"
-            placeholder="🔍 Pesquisar por título, artista ou álbum..."
+            placeholder=" Pesquisar por título, artista ou álbum..."
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
           />

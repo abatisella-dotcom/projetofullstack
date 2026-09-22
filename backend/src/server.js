@@ -6,7 +6,7 @@ const autenticacaoRotas = require('./routes/autenticacaoRotas');
 const musicasRotas = require('./routes/musicasRotas');
 
 const app = express();
-const porta = process.env.PORT;
+const porta = process.env.PORT || 3001;
 
 // Middlewares basicos
 app.use(cors());
@@ -18,10 +18,10 @@ app.use('/api/musicas', musicasRotas);
 
 // Rota de teste
 app.get('/', (req, res) => {
-    res.json({ status: 'API MakalMusic funcionndo com sucesso!' });
+    res.json({ status: 'API MakalMusic funcionando com sucesso!' });
 });
 
 // Inicializa o servidor
 app.listen(porta, () => {
-  console.log(`Servidor rodando na porta http://localhost:${porta}`);
+  console.log(`Servidor rodando em http://localhost:${porta}`);
 });

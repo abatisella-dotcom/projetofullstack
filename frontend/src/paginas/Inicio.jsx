@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import anaBeImg from '../img/anabe.png';
+import anaKosoImg from '../img/image.png';
+import mariaMansoImg from '../img/image copy.png';
+import mariaDiasImg from '../img/dias.png';
 
 export default function Inicio() {
   const equipe = [
-    { nome: 'Ana Beatriz', foto: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop' },
-    { nome: 'Ana Koso', foto: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200&auto=format&fit=crop' },
-    { nome: 'Maria Manso', foto: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&auto=format&fit=crop' },
-    { nome: 'Maria Dias', foto: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&auto=format&fit=crop' }
+    { nome: 'Ana Beatriz', foto: anaBeImg },
+    { nome: 'Ana Koso', foto: anaKosoImg },
+    { nome: 'Maria Manso', foto: mariaMansoImg },
+    { nome: 'Maria Dias', foto: mariaDiasImg }
   ];
 
   return (
@@ -26,9 +30,7 @@ export default function Inicio() {
         </div>
 
         <div className="home-disco-vinil">
-          <div className="disco-centro">
-            Makal
-          </div>
+
         </div>
       </section>
 
@@ -38,19 +40,16 @@ export default function Inicio() {
         
         <div className="home-recursos-grid">
           <div className="home-cartao-recurso">
-            <div className="home-icone-recurso">🎤</div>
             <h3>Artistas</h3>
             <p>Conheça os cantores e bandas lendárias de cada movimento musical.</p>
           </div>
 
           <div className="home-cartao-recurso">
-            <div className="home-icone-recurso">💿</div>
             <h3>Álbuns</h3>
             <p>Descubra os álbuns históricos que marcaram épocas e gerações.</p>
           </div>
 
           <div className="home-cartao-recurso">
-            <div className="home-icone-recurso">🎵</div>
             <h3>Músicas</h3>
             <p>Gerencie títulos, datas de lançamento e descrições completas.</p>
           </div>

@@ -115,6 +115,7 @@ a {
   flex: 1;
   display: flex;
   flex-direction: column;
+  
 }
 
 /* Rodape */
@@ -354,6 +355,8 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  min-height: 100vh;
+  height: auto;
 }
 
 .home-hero-texto {
@@ -362,7 +365,7 @@ a {
 
 .home-hero-titulo {
   font-family: var(--fonte-titulo);
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -375,31 +378,18 @@ a {
 }
 
 .home-disco-vinil {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #222 25%, #111 26%, #333 55%, #111 56%, #444 80%, #111 81%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  animation: girarDisco 20s linear infinite;
+  background-image: url("./img/disco.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 600 / 670;
+  max-height: 670px;
+  flex-shrink: 1;
 }
 
-.disco-centro {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: var(--cor-rosa);
-  border: 6px solid #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--fonte-titulo);
-  color: var(--cor-vinho);
-  font-weight: bold;
-  font-size: 0.8rem;
-}
+
 
 @keyframes girarDisco {
   from { transform: rotate(0deg); }
@@ -412,10 +402,11 @@ a {
 }
 
 .home-secao-titulo {
+  margin-top: 50px;
   font-family: var(--fonte-titulo);
   font-size: 2rem;
   color: var(--cor-vinho);
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .home-recursos-grid {
@@ -465,8 +456,8 @@ a {
 }
 
 .foto-membro {
-  width: 95px;
-  height: 95px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 3px solid var(--cor-rosa);
   object-fit: cover;
@@ -696,7 +687,7 @@ a {
 
 .capa-musica {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   background-color: #EEE;
 }
