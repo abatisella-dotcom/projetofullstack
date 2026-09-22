@@ -44,7 +44,7 @@ a {
   color: inherit;
 }
 
-/* Cabecalho / Navbar */
+
 .cabecalho {
   background-color: var(--cor-vinho);
   color: var(--cor-branca);
@@ -52,7 +52,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -83,12 +82,11 @@ a {
 .cabecalho-link:hover,
 .cabecalho-link.ativo {
   color: #FFFFFF;
-  text-decoration: underline;
 }
 
 .cabecalho-botao-sair {
   background-color: var(--cor-rosa);
-  color: var(--cor-vinho);
+  color: var(--cor-branca);
   border: none;
   padding: 6px 16px;
   border-radius: 20px;
@@ -121,10 +119,10 @@ a {
 /* Rodape */
 .rodape {
   background-color: var(--cor-branca);
-  border-top: 1px solid var(--cor-borda);
+  border-top: 3px solid var(--cor-vinho-escuro);
   padding: 25px 20px;
   text-align: center;
-  color: var(--cor-cinza-texto);
+  color: #000000;
   font-size: 0.85rem;
   margin-top: auto;
 }
@@ -137,22 +135,16 @@ a {
 }
 
 .rodape-icone {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid var(--cor-borda);
+  width: 40px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
-  color: var(--cor-vinho);
+  color: #000000;
   transition: all 0.2s ease;
 }
 
-.rodape-icone:hover {
-  background-color: var(--cor-vinho);
-  color: white;
-}
 
 /* Telas de Autenticacao (Login e Cadastro) */
 .fundo-autenticacao {
@@ -604,6 +596,8 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  background-image: url('../src/assets/img/FundoListrado.png');
+  background-repeat: repeat;
 }
 
 .titulo-listagem {
@@ -639,11 +633,7 @@ a {
   background-color: #FFFFFF;
 }
 
-.botoes-generos {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
+
 
 .filtro-genero-btn {
   padding: 6px 14px;

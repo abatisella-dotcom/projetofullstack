@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { listarMusicas } from '../servicos/api';
+import { FaSearch } from "react-icons/fa";
 
 export default function MusicasLista() {
   const [musicas, setMusicas] = useState([]);
@@ -8,8 +9,6 @@ export default function MusicasLista() {
   const [generoSelecionado, setGeneroSelecionado] = useState('Todos');
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState('');
-
-  const generosDisponiveis = ['Todos', 'Pop', 'Rock', 'R&B', 'Jazz', 'MPB'];
 
   // Carrega as musicas do backend
   async function carregarMusicas() {
@@ -44,24 +43,13 @@ export default function MusicasLista() {
           <input
             type="text"
             className="busca-input"
-            placeholder=" Pesquisar por título, artista ou álbum..."
+            placeholder="Pesquisar por músicas"
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
           />
         </form>
 
-        <div className="botoes-generos">
-          {generosDisponiveis.map((gen) => (
-            <button
-              key={gen}
-              type="button"
-              className={`filtro-genero-btn ${generoSelecionado === gen ? 'ativo' : ''}`}
-              onClick={() => setGeneroSelecionado(gen)}
-            >
-              {gen}
-            </button>
-          ))}
-        </div>
+        
       </div>
 
       {erro && <div className="mensagem-erro">{erro}</div>}
